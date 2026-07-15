@@ -1721,25 +1721,26 @@
     }
 
     const counterAnimationFrames = [];
+    const statisticsCard = document.querySelector(".statistics");
+    const statisticCounters = Array.from(
+      document.querySelectorAll(".statistics strong")
+    );
+    let statisticsObserver;
+    let statisticsHaveAnimated = false;
 
-    function animateStatisticCounters() {
-      const prefersReducedMotion = window.matchMedia(
-        "(prefers-reduced-motion: reduce)"
-      ).matches;
-
-      document.querySelectorAll(".statistics strong").forEach((counter) => {
+    const numericStatisticCounters = statisticCounters.flatMap((counter) => {
         const originalText = counter.textContent.trim();
         const numberMatch = originalText.match(/-?\d[\d,]*(?:\.\d+)?/);
 
         if (!numberMatch) {
-          return;
+          return [];
         }
 
         const originalNumber = numberMatch[0];
         const finalValue = Number(originalNumber.replace(/,/g, ""));
 
-        if (!Number.isFinite(finalValue) || prefersReducedMotion) {
-          return;
+        if (!Number.isFinite(finalValue)) {
+          return [];
         }
 
         const prefix = originalText.slice(0, numberMatch.index);
@@ -1750,10 +1751,6 @@
         const decimalPlaces = originalNumber.includes(".")
           ? originalNumber.split(".")[1].length
           : 0;
-        const duration = 1800;
-        let startTime;
-        let animationFrame;
-
         const formatValue = (value) => {
           const fixedValue = decimalPlaces
             ? value.toFixed(decimalPlaces)
@@ -1772,6 +1769,45 @@
         };
 
         counter.textContent = `${prefix}${formatValue(0)}${suffix}`;
+
+        return [{
+          counter,
+          originalText,
+          finalValue,
+          prefix,
+          suffix,
+          formatValue
+        }];
+      });
+
+    function animateStatisticCounters() {
+      if (statisticsHaveAnimated) {
+        return;
+      }
+
+      statisticsHaveAnimated = true;
+      statisticsObserver?.disconnect();
+
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      numericStatisticCounters.forEach(({
+        counter,
+        originalText,
+        finalValue,
+        prefix,
+        suffix,
+        formatValue
+      }) => {
+        if (prefersReducedMotion) {
+          counter.textContent = originalText;
+          return;
+        }
+
+        const duration = 1800;
+        let startTime;
+        let animationFrame;
 
         const updateCounter = (timestamp) => {
           startTime ??= timestamp;
@@ -1794,7 +1830,21 @@
       });
     }
 
-    animateStatisticCounters();
+    if (statisticsCard && numericStatisticCounters.length) {
+      if ("IntersectionObserver" in window) {
+        statisticsObserver = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+              animateStatisticCounters();
+            }
+          },
+          { threshold: [0.4] }
+        );
+        statisticsObserver.observe(statisticsCard);
+      } else {
+        animateStatisticCounters();
+      }
+    }
 
     window.addEventListener(
       "pagehide",
@@ -1806,6 +1856,7 @@
         document.documentElement.style.removeProperty("scroll-behavior");
         journeyStageObserver?.disconnect();
         journeySectionObserver?.disconnect();
+        statisticsObserver?.disconnect();
         counterAnimationFrames.forEach((cancelAnimation) => cancelAnimation());
       },
       { once: true }
