@@ -402,17 +402,6 @@ input:focus-visible {
   height: 320px;
 }
 
-.right-tutor img {
-  position: absolute;
-  z-index: 3;
-  right: 0;
-  bottom: 0;
-  width: 250px;
-  max-height: 320px;
-  object-fit: contain;
-  object-position: bottom;
-}
-
 .right-tutor-shape {
   position: absolute;
   z-index: 1;
@@ -1012,6 +1001,360 @@ input:focus-visible {
     radial-gradient(circle at 94% 8%, rgba(123, 95, 199, 0.12), transparent 25%),
     radial-gradient(circle at 7% 90%, rgba(74, 159, 232, 0.09), transparent 24%),
     #ffffff;
+}
+
+/* =========================
+   RESPONSIVE REFINEMENTS
+========================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.newsletter-form,
+.newsletter-form input,
+.newsletter-form button,
+.footer-column,
+.faq-question > span:first-child {
+  min-width: 0;
+}
+
+.comparison-table {
+  max-width: 100%;
+  overscroll-behavior-inline: contain;
+}
+
+@media (max-width: 1024px) {
+  .page-background {
+    padding: 16px;
+  }
+
+  .hero-shell {
+    border-radius: 36px;
+  }
+
+  .hero {
+    padding-inline: clamp(32px, 6vw, 60px);
+  }
+
+  .about-tutorings,
+  .learning-steps,
+  .comparison-section,
+  .idp-partnership,
+  .testimonials-section {
+    padding-left: clamp(18px, 3vw, 24px);
+    padding-right: clamp(18px, 3vw, 24px);
+  }
+
+  .footer-container {
+    gap: 48px;
+  }
+
+  .comparison-table {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(107, 79, 187, 0.35) transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-background {
+    padding: 0;
+  }
+
+  .hero-shell {
+    border-radius: 0;
+  }
+
+  .navbar {
+    min-height: 84px;
+    padding: 14px 20px;
+  }
+
+  .brand-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mobile-navigation {
+    padding: 8px 20px 24px;
+  }
+
+  .hero {
+    padding-inline: 22px;
+  }
+
+  .hero-title {
+    font-size: clamp(44px, 10vw, 60px);
+    letter-spacing: -2.5px;
+  }
+
+  .hero-description {
+    width: min(100%, 600px);
+    font-size: 16px;
+  }
+
+  .right-tutor {
+    right: -46px;
+    transform: scale(0.82);
+    transform-origin: right bottom;
+  }
+
+  .why-us,
+  .about-tutorings,
+  .learning-steps,
+  .comparison-section,
+  .idp-partnership,
+  .testimonials-section,
+  .faq-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .section-heading h2,
+  .about-title,
+  .steps-heading h2,
+  .comparison-heading h2,
+  .idp-heading h2,
+  .testimonials-heading h2,
+  .faq-intro h2 {
+    font-size: clamp(36px, 7vw, 46px);
+    letter-spacing: -1.2px;
+  }
+
+  .section-heading p,
+  .journey-heading > p,
+  .steps-heading p,
+  .comparison-heading p,
+  .idp-heading p,
+  .testimonials-heading p,
+  .faq-intro > p {
+    font-size: 16px;
+  }
+
+  .primary-button,
+  .steps-button,
+  .idp-main-button,
+  .testimonials-button,
+  .gold-btn {
+    max-width: 100%;
+  }
+
+  .benefit-card,
+  .step-card,
+  .stage-card,
+  .idp-benefit-card,
+  .testimonial-card {
+    max-width: 100%;
+  }
+
+  .footer-container,
+  .footer-bottom,
+  .footer-vision-contact {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    min-height: 76px;
+    padding: 10px 14px;
+  }
+
+  .brand-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .menu-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .mobile-navigation {
+    padding-inline: 14px;
+  }
+
+  .hero {
+    padding: 44px 16px 370px;
+  }
+
+  .hero-title {
+    font-size: clamp(38px, 12.5vw, 50px);
+    line-height: 1.04;
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    margin-top: 26px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .main-button {
+    min-height: 54px;
+    padding-left: 19px;
+    font-size: 15px;
+  }
+
+  .statistics {
+    right: 12px;
+    left: 12px;
+    padding: 12px 18px;
+  }
+
+  .stat-item {
+    min-height: 68px;
+  }
+
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .why-us,
+  .about-tutorings,
+  .learning-steps,
+  .comparison-section,
+  .idp-partnership,
+  .testimonials-section,
+  .faq-section {
+    padding: 60px 14px;
+  }
+
+  .section-heading h2,
+  .about-title,
+  .steps-heading h2,
+  .comparison-heading h2,
+  .idp-heading h2,
+  .testimonials-heading h2,
+  .faq-intro h2 {
+    font-size: clamp(31px, 9.5vw, 38px);
+    letter-spacing: -0.9px;
+  }
+
+  .section-heading,
+  .journey-heading,
+  .steps-heading,
+  .comparison-heading,
+  .idp-heading,
+  .testimonials-heading {
+    margin-bottom: 36px;
+  }
+
+  .benefit-card,
+  .step-card,
+  .stage-card,
+  .idp-introduction,
+  .idp-benefit-card,
+  .testimonial-card {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .journey-stage,
+  .journey-stage:nth-child(even) {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .journey-line {
+    left: 24px;
+  }
+
+  .comparison-section {
+    overflow: hidden;
+  }
+
+  .comparison-row {
+    border-radius: 18px;
+  }
+
+  .feature-column {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .company-column {
+    padding-inline: 4px;
+  }
+
+  .scratch-card {
+    height: 550px;
+  }
+
+  .guarantee-reveal {
+    padding: 24px 16px;
+  }
+
+  .guarantee-content h2 {
+    font-size: 27px;
+  }
+
+  .guarantee-benefits {
+    gap: 7px;
+    font-size: 14px;
+  }
+
+  .testimonial-card {
+    height: 400px;
+  }
+
+  .testimonial-review {
+    -webkit-line-clamp: 6;
+    font-size: 15px;
+  }
+
+  .partner-logo-wrapper {
+    width: 110px;
+    height: 56px;
+  }
+
+  .logo-strip-track {
+    gap: 40px;
+  }
+
+  .faq-question {
+    gap: 12px;
+    padding: 18px 16px;
+  }
+
+  .faq-answer p {
+    padding-inline: 16px;
+  }
+
+  .site-footer {
+    margin-top: 55px;
+    padding: 52px 18px 24px;
+  }
+
+  .footer-container {
+    gap: 38px;
+  }
+
+  .footer-column p,
+  .footer-links a,
+  .footer-contact a {
+    overflow-wrap: anywhere;
+  }
+
+  .newsletter-form,
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-vision-mark {
+    width: 112px;
+    height: 74px;
+  }
 }
 
 .about-tutorings::before,
