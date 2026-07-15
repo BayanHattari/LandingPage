@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Personalized one-to-one English lessons with qualified bilingual tutors."
+  />
+
+  <title>Tutorings | Learn English with Confidence</title>
+
+  <script>
+    (() => {
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+
+      if (location.hash) {
+        history.replaceState(null, "", location.href.split("#")[0]);
+      }
+
+      const resetPageScroll = () => {
+        document.documentElement.style.scrollBehavior = "auto";
+        window.scrollTo(0, 0);
+
+        requestAnimationFrame(() => {
+          document.documentElement.style.removeProperty("scroll-behavior");
+        });
+      };
+
+      resetPageScroll();
+      window.addEventListener("pageshow", resetPageScroll);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page-background">
+    <main class="hero-shell" id="home">
+
+      <!-- Header -->
+      <header class="navbar">
+        <a href="#" class="brand" aria-label="Tutorings homepage">
+          <img
+            class="brand-logo"
+            src="images/image.png"
+            alt="Tutorings logo"
+          />
+        </a>
+
+        <nav class="desktop-navigation" aria-label="Primary navigation">
+          <a class="nav-link active" href="#hero" aria-current="location">Home</a>
+          <a class="nav-link" href="#why-us">Why Us</a>
+          <a class="nav-link" href="#how-it-works">How It Works</a>
+          <a class="nav-link" href="#idp-partnership">IELTS</a>
+          <a class="nav-link" href="#testimonials">Student Stories</a>
+        </nav>
+
+        <a class="sign-in-link" href="#faq">FAQs</a>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <!-- Mobile navigation -->
+      <nav
+        class="mobile-navigation"
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+      >
+        <a class="active" href="#hero" aria-current="location">Home</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#idp-partnership">IELTS</a>
+        <a href="#testimonials">Student Stories</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero" id="hero">
+        <div class="left-tutor">
+          <div class="dot-pattern" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Learn English</span>
+
+            <span class="title-line">
+              <span class="script-word purple-word">with</span>
+              <span>a tutor</span>
+            </span>
+
+            <span class="title-line">
+              <span>who</span>
+              <span class="script-word yellow-word">understands</span>
+              <span>you</span>
+            </span>
+          </h1>
+
+          <p class="hero-description">
+            Personalized one-to-one English lessons with qualified
+            bilingual tutors, flexible schedules, and a learning plan
+            built around your goals.
+          </p>
+
+          <a class="primary-button main-button" href="#">
+            <span>Book a Free Session</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="right-tutor">
+          <div class="right-tutor-shape shape-one"></div>
+          <div class="right-tutor-shape shape-two"></div>
+
+          <img
+            src="images/tutor-standing.png"
+            alt="English tutor holding a Tutorings notebook"
+          />
+        </div>
+
+        <div
+          class="decorative-circle circle-one"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="decorative-circle circle-two"
+          aria-hidden="true"
+        ></div>
+
+        <div class="target-decoration" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section class="statistics" id="statistics" aria-label="Tutorings statistics">
+        <article class="stat-item">
+          <div class="stat-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="24" cy="21" r="9" />
+              <circle cx="43" cy="24" r="7" />
+              <path d="M8 51c1-13 8-20 16-20s15 7 16 20" />
+              <path d="M35 51c1-10 6-16 12-16s10 5 11 16" />
+            </svg>
+          </div>
+
+          <div>
+            <strong>50+</strong>
+            <span>Qualified Tutors</span>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <div class="stat-icon blue-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path d="m5 24 27-14 27 14-27 14L5 24Z" />
+              <path d="M15 30v15c10 8 24 8 34 0V30" />
+              <path d="M57 26v19" />
+            </svg>
+          </div>
+
+          <div>
+            <strong>200+</strong>
+            <span>Students</span>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <div class="stat-icon sky-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="9" y="12" width="46" height="34" rx="4" />
+              <path d="M24 54h16M32 46v8" />
+              <circle cx="32" cy="27" r="7" />
+              <path d="M20 41c2-7 6-10 12-10s10 3 12 10" />
+            </svg>
+          </div>
+
+          <div>
+            <strong>Private</strong>
+            <span>Live Lessons</span>
+          </div>
+        </article>
+
+        <article class="stat-item">
+          <div class="stat-icon green-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="10" y="15" width="44" height="39" rx="5" />
+              <path d="M10 27h44M21 9v12M43 9v12" />
+              <path d="M21 35h5M31 35h5M41 35h5M21 44h5M31 44h5" />
+            </svg>
+          </div>
+
+          <div>
+            <strong>Flexible</strong>
+            <span>Scheduling</span>
+          </div>
+        </article>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="why-us" id="why-us">
+        <div class="why-us-container">
+          <div class="section-heading">
+            <span class="section-label">Why Choose Us</span>
+
+            <h2>
+              Everything You Need to
+              <span>Succeed</span>
+            </h2>
+
+            <p>
+              A personalized English-learning experience designed to help
+              you build confidence and make real progress.
+            </p>
+          </div>
+
+<div class="benefits-grid">
+  <!-- Card 1 -->
+  <article class="benefit-card">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="24" cy="21" r="8"></circle>
+        <circle cx="43" cy="23" r="7"></circle>
+
+        <path d="M9 51c1-13 7-20 15-20s14 7 15 20"></path>
+        <path d="M35 51c1-10 5-16 12-16 6 0 10 6 11 16"></path>
+      </svg>
+    </div>
+
+    <h3>50+ Qualified Tutors</h3>
+
+    <p>
+      Learn with experienced and qualified tutors who are committed to
+      supporting your progress at every stage.
+    </p>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="benefit-card">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="23" cy="19" r="8"></circle>
+        <circle cx="43" cy="22" r="7"></circle>
+
+        <path d="M8 51c1-13 7-20 15-20s14 7 15 20"></path>
+        <path d="M35 51c1-10 5-16 12-16 6 0 10 6 11 16"></path>
+
+        <rect x="19" y="35" width="26" height="17" rx="3"></rect>
+        <path d="M25 41h14M25 46h9"></path>
+      </svg>
+    </div>
+
+    <h3>Trusted by 200+ Students</h3>
+
+    <p>
+      Join more than 200 learners who have improved their English and
+      achieved clear, measurable results.
+    </p>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="benefit-card" id="ielts">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="19" r="9"></circle>
+
+        <path d="M14 52c2-15 9-23 18-23s16 8 18 23"></path>
+
+        <path d="M20 14h-5M49 14h-5"></path>
+        <path d="M18 8l-4-4M46 8l4-4"></path>
+
+        <path d="M25 42h14"></path>
+      </svg>
+    </div>
+
+    <h3>IELTS Preparation</h3>
+
+    <p>
+      Prepare with confidence for your IELTS exam.
+    </p>
+  </article>
+
+  <!-- Card 4 -->
+  <article class="benefit-card featured-card" id="general-english">
+    <div class="benefit-icon featured-icon">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M8 17c9 0 17 3 24 10v28C25 48 17 45 8 45V17Z"></path>
+
+        <path d="M56 17c-9 0-17 3-24 10v28c7-7 15-10 24-10V17Z"></path>
+
+        <path d="M32 27v28"></path>
+      </svg>
+    </div>
+
+    <h3>General English</h3>
+
+    <p>
+      The essential program to strengthen your English.
+    </p>
+  </article>
+</div>
+        </div>
+      </section>
+      <section class="about-tutorings" id="about">
+        <div class="about-container">
+          <div class="journey-heading">
+            <span class="section-tag">ABOUT TUTORINGS SAUDI ARABIA</span>
+
+            <h2 class="about-title">
+              From first words to
+              <span>global opportunities</span>
+            </h2>
+
+            <p>
+              Follow a clear learning path designed by Tutorings Saudi Arabia
+              to build your confidence, strengthen your skills, and prepare
+              you for international success.
+            </p>
+          </div>
+
+          <div class="journey-timeline-shell">
+            <span class="journey-line" aria-hidden="true">
+              <span class="journey-line-fill"></span>
+            </span>
+
+            <ol class="journey-timeline" aria-label="English learning journey">
+            <li class="journey-stage" data-stage-index="0">
+              <span class="stage-node" aria-hidden="true">01</span>
+
+              <article class="stage-card">
+                <div class="stage-icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M9 14c9 0 17 3 23 10v30C26 48 18 45 9 45V14Z" />
+                    <path d="M55 14c-9 0-17 3-23 10v30c6-6 14-9 23-9V14Z" />
+                    <path d="M32 24v30M18 25h7M39 25h7" />
+                  </svg>
+                </div>
+
+                <div class="stage-copy">
+                  <span class="stage-kicker">Foundation</span>
+                  <h3>Beginner</h3>
+                  <p class="stage-description" aria-hidden="true">
+                    Build essential vocabulary, understand everyday phrases,
+                    and begin speaking with a strong, supported foundation.
+                  </p>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="journey-stage" data-stage-index="1">
+              <span class="stage-node" aria-hidden="true">02</span>
+
+              <article class="stage-card">
+                <div class="stage-icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <path d="M9 12h35a7 7 0 0 1 7 7v17a7 7 0 0 1-7 7H26L14 53V43H9a7 7 0 0 1-7-7V19a7 7 0 0 1 7-7Z" />
+                    <path d="M15 25h23M15 32h16M47 24h8a7 7 0 0 1 7 7v13a7 7 0 0 1-7 7h-3v7l-9-7h-7" />
+                  </svg>
+                </div>
+
+                <div class="stage-copy">
+                  <span class="stage-kicker">Communication</span>
+                  <h3>Intermediate</h3>
+                  <p class="stage-description" aria-hidden="true">
+                    Speak more naturally, improve listening accuracy, and use
+                    English confidently in study, work, and daily life.
+                  </p>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="journey-stage" data-stage-index="2">
+              <span class="stage-node" aria-hidden="true">03</span>
+
+              <article class="stage-card">
+                <div class="stage-icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <rect x="12" y="8" width="40" height="49" rx="6" />
+                    <path d="M23 8V5h18v3M21 23h22M21 31h13" />
+                    <path d="m22 44 6 6 15-18" />
+                  </svg>
+                </div>
+
+                <div class="stage-copy">
+                  <span class="stage-kicker">Exam preparation</span>
+                  <h3>IELTS Ready</h3>
+                  <p class="stage-description" aria-hidden="true">
+                    Master the IELTS format, sharpen every assessed skill, and
+                    approach test day with a clear strategy and confidence.
+                  </p>
+                </div>
+
+              </article>
+            </li>
+
+            <li class="journey-stage" data-stage-index="3">
+              <span class="stage-node" aria-hidden="true">04</span>
+
+              <article class="stage-card">
+                <div class="stage-icon">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <circle cx="32" cy="32" r="25" />
+                    <path d="M7 32h50M32 7c8 7 12 15 12 25S40 50 32 57M32 7c-8 7-12 15-12 25s4 18 12 25" />
+                    <path d="m39 22 14-9-6 15-8-6Z" />
+                  </svg>
+                </div>
+
+                <div class="stage-copy">
+                  <span class="stage-kicker">Your next chapter</span>
+                  <h3>Global Opportunities</h3>
+                  <p class="stage-description" aria-hidden="true">
+                    Use internationally recognized English skills to pursue
+                    university, career, travel, and global connections.
+                  </p>
+                </div>
+
+              </article>
+            </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+<section class="learning-steps" id="how-it-works">
+  <div class="steps-container">
+    <div class="steps-heading">
+      <span class="steps-label">HOW IT WORKS</span>
+
+      <h2>
+        Start learning in
+        <span>4 simple steps</span>
+      </h2>
+
+      <p>
+        Begin your English-learning journey with a clear and personalized
+        process designed around your level, goals, and schedule.
+      </p>
+    </div>
+
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <article class="step-card step-one">
+        <div class="step-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M18 10h28a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6V16a6 6 0 0 1 6-6Z" />
+            <path d="M23 10V7h18v3" />
+            <path d="M22 25h20M22 35h14" />
+            <path d="m22 45 4 4 9-10" />
+          </svg>
+        </div>
+
+        <div class="step-content">
+          <span class="step-number">01</span>
+          <h3>Take the Placement Test</h3>
+          <p>
+            Complete a short assessment to identify your current English
+            level and learning needs.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 2 -->
+      <article class="step-card step-two">
+        <div class="step-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 17c8 0 16 3 24 10v28C24 48 16 45 8 45V17Z" />
+            <path d="M56 17c-8 0-16 3-24 10v28c8-7 16-10 24-10V17Z" />
+            <path d="M32 27v28" />
+            <path d="M18 27h7M39 27h7" />
+          </svg>
+        </div>
+
+        <div class="step-content">
+          <span class="step-number">02</span>
+          <h3>Choose Your Program</h3>
+          <p>
+            Select General English, IELTS Preparation, STEP Preparation,
+            or another program that matches your goal.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 3 -->
+      <article class="step-card step-three">
+        <div class="step-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="9" y="13" width="46" height="42" rx="6" />
+            <path d="M9 26h46M21 7v12M43 7v12" />
+            <path d="M20 35h6M30 35h6M40 35h6M20 45h6M30 45h6" />
+          </svg>
+        </div>
+
+        <div class="step-content">
+          <span class="step-number">03</span>
+          <h3>Schedule Your Lessons</h3>
+          <p>
+            Choose lesson times that suit your routine and learn with a
+            dedicated tutor throughout your level.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 4 -->
+      <article class="step-card step-four">
+        <div class="step-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="8" y="11" width="48" height="35" rx="5" />
+            <path d="M23 55h18M32 46v9" />
+            <circle cx="32" cy="27" r="7" />
+            <path d="M20 42c2-7 6-10 12-10s10 3 12 10" />
+          </svg>
+        </div>
+
+        <div class="step-content">
+          <span class="step-number">04</span>
+          <h3>Start Your Learning Journey</h3>
+          <p>
+            Attend personalized live lessons, receive feedback, and build
+            confidence through a plan designed for your progress.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <a href="#" class="steps-button">
+      Get Started
+      <span>→</span>
+    </a>
+  </div>
+</section>
+<section class="comparison-section" id="comparison">
+  <div class="comparison-container">
+
+    <div class="comparison-heading">
+      <span class="comparison-label">WHY TUTORINGS</span>
+
+      <h2>
+        What makes us
+        <span>different?</span>
+      </h2>
+
+      <p>
+        See how Tutorings compares with other online English-learning
+        platforms across the features that matter most.
+      </p>
+    </div>
+
+    <div class="comparison-table">
+
+      <!-- Header -->
+      <div class="comparison-row comparison-header">
+        <div class="feature-column">
+          Features
+        </div>
+
+        <div class="company-column tutorings-column">
+          <div class="company-brand comparison-brand">
+            <span class="brand-logo-frame">
+              <img src="images/image.png" alt="Tutorings logo" />
+            </span>
+            <span class="brand-name">Tutorings</span>
+          </div>
+        </div>
+
+        <div class="company-column">
+          <div class="company-brand comparison-brand">
+            <span class="brand-logo-frame">
+              <img
+                src="images/cambly-logo.png?v=20260714"
+                alt="Cambly logo"
+              />
+            </span>
+            <span class="brand-name">Cambly</span>
+          </div>
+        </div>
+
+        <div class="company-column">
+          <div class="company-brand comparison-brand">
+            <span class="brand-logo-frame">
+              <img src="images/dalilk logo.png" alt="Dalilk4IELTS logo" />
+            </span>
+            <span class="brand-name">Dalilk4IELTS</span>
+          </div>
+        </div>
+
+        <div class="company-column">
+          <div class="company-brand comparison-brand">
+            <span class="brand-logo-frame">
+              <img src="images/preply logo.png" alt="Preply logo" />
+            </span>
+            <span class="brand-name">Preply</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flexible scheduling -->
+      <div class="comparison-row">
+        <div class="feature-column">
+          <div class="feature-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="10" y="15" width="44" height="39" rx="5" />
+              <path d="M10 27h44M21 9v12M43 9v12" />
+              <path d="M21 35h5M31 35h5M41 35h5M21 44h5M31 44h5" />
+            </svg>
+          </div>
+
+          <div>
+            <h3>Flexible Scheduling</h3>
+            <p>Available around the clock with flexible lesson times.</p>
+          </div>
+        </div>
+
+        <div class="company-column tutorings-column">
+          <span class="status success">✓</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+      </div>
+
+      <!-- Fixed tutor -->
+      <div class="comparison-row">
+        <div class="feature-column">
+          <div class="feature-icon purple-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="20" r="10" />
+              <path d="M14 52c2-14 8-22 18-22s16 8 18 22" />
+              <path d="M45 10h10v10" />
+              <path d="m55 10-12 12" />
+            </svg>
+          </div>
+
+          <div>
+            <h3>Dedicated Tutor</h3>
+            <p>Learn with the same tutor throughout your level.</p>
+          </div>
+        </div>
+
+        <div class="company-column tutorings-column">
+          <span class="status success">✓</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status limited">Limited</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status limited">Limited</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status limited">Limited</span>
+        </div>
+      </div>
+
+      <!-- Golden guarantee -->
+      <div class="comparison-row">
+        <div class="feature-column">
+          <div class="feature-icon gold-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 6 52 14v14c0 14-8 23-20 30C20 51 12 42 12 28V14L32 6Z" />
+              <path d="m22 31 7 7 14-16" />
+            </svg>
+          </div>
+
+          <div>
+            <h3>Satisfaction Guarantee</h3>
+            <p>Receive a refund after your first lesson if it is not right for you.</p>
+          </div>
+        </div>
+
+        <div class="company-column tutorings-column">
+          <span class="status success">✓</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+      </div>
+
+      <!-- Live lessons -->
+      <div class="comparison-row">
+        <div class="feature-column">
+          <div class="feature-icon blue-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <rect x="8" y="11" width="48" height="35" rx="5" />
+              <path d="M23 55h18M32 46v9" />
+              <circle cx="32" cy="27" r="7" />
+              <path d="M20 42c2-7 6-10 12-10s10 3 12 10" />
+            </svg>
+          </div>
+
+          <div>
+            <h3>All Lessons Are Live</h3>
+            <p>Private, direct sessions with real-time tutor feedback.</p>
+          </div>
+        </div>
+
+        <div class="company-column tutorings-column">
+          <span class="status success">✓</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+      </div>
+
+      <!-- CEFR -->
+      <div class="comparison-row">
+        <div class="feature-column">
+          <div class="feature-icon green-icon">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M8 18c9 0 17 3 24 10v27C25 48 17 45 8 45V18Z" />
+              <path d="M56 18c-9 0-17 3-24 10v27c7-7 15-10 24-10V18Z" />
+              <path d="M32 28v27" />
+            </svg>
+          </div>
+
+          <div>
+            <h3>Clear CEFR Learning Path</h3>
+            <p>Progress through structured levels based on an international framework.</p>
+          </div>
+        </div>
+
+        <div class="company-column tutorings-column">
+          <span class="status success">✓</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+
+        <div class="company-column">
+          <span class="status failure">×</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="gold-guarantee" id="guarantee" aria-labelledby="guarantee-title">
+  <div class="scratch-card" data-scratch-card>
+    <div class="guarantee-reveal">
+      <div class="gold-pattern"></div>
+      <div class="gold-circle gold-circle-1"></div>
+      <div class="gold-circle gold-circle-2"></div>
+
+      <div class="guarantee-sparkles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="guarantee-content">
+        <div class="badge">
+          <img src="images/golden-guarantee-badge.png" alt="">
+        </div>
+
+        <span class="tag">🏅 Golden Guarantee</span>
+
+        <h2 id="guarantee-title">Your Learning Journey Is Protected</h2>
+
+        <ul class="guarantee-benefits">
+          <li>100% Refund After Your First Lesson</li>
+          <li>Learn Completely Risk-Free</li>
+          <li>Your Learning Journey Is Protected</li>
+        </ul>
+
+        <a href="#how-it-works" class="gold-btn">
+          Start Learning Risk-Free <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="scratch-surface">
+      <canvas
+        class="scratch-canvas"
+        tabindex="0"
+        role="button"
+        aria-label="Scratch the golden surface to reveal the guarantee. Press Enter to reveal it instantly."
+      ></canvas>
+
+      <div class="scratch-instruction" aria-hidden="true">
+        <span class="scratch-coin">◉</span>
+        <strong>Scratch to Reveal Your Golden Guarantee</strong>
+        <span>Use your finger or mouse</span>
+      </div>
+
+      <button class="reveal-guarantee" type="button">
+        Reveal Guarantee
+      </button>
+    </div>
+  </div>
+
+  <button class="scratch-again" type="button" hidden>
+    Scratch Again
+  </button>
+
+  <p class="scratch-status" aria-live="polite"></p>
+</section>
+<!-- IELTS & IDP Partnership -->
+<section class="idp-partnership" id="idp-partnership">
+  <div class="idp-container">
+
+    <div class="idp-heading">
+      <span class="idp-label">OFFICIAL PARTNERSHIP</span>
+
+      <h2>
+        Official IELTS Preparation
+        <span>Partner with IDP</span>
+      </h2>
+
+      <p>
+        Tutorings is proud to partner with IDP to provide students with
+        trusted IELTS preparation, official learning resources, and
+        exclusive benefits.
+      </p>
+    </div>
+
+    <div class="idp-showcase">
+      <div class="idp-logo-card">
+        <div class="idp-decoration idp-decoration-one"></div>
+        <div class="idp-decoration idp-decoration-two"></div>
+
+        <span class="partnership-caption">Tutorings × IELTS × IDP</span>
+
+        <img
+          src="images/idp-ielts-logo.png"
+          alt="Tutorings partnership with IELTS and IDP"
+        />
+
+        <div class="verified-partnership">
+          <span class="verified-icon">✓</span>
+
+          <div>
+            <strong>Official Partnership</strong>
+            <p>Supporting students throughout their IELTS journey.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="idp-introduction">
+        <span class="small-heading">Exclusive student benefits</span>
+
+        <h3>
+          Prepare for IELTS with
+          <span>greater confidence</span>
+        </h3>
+
+        <p>
+          Students enrolled in the Tutorings IELTS preparation program
+          receive exclusive support and additional benefits through our
+          official partnership with IDP.
+        </p>
+
+        <a href="#" class="idp-main-button">
+          Explore IELTS Programs
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="idp-benefits-grid">
+
+      <!-- Benefit 1 -->
+      <article class="idp-benefit-card purple-benefit">
+        <div class="idp-benefit-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M9 20 32 8l23 12-23 12L9 20Z" />
+            <path d="M18 27v15c8 7 20 7 28 0V27" />
+            <path d="M55 22v18" />
+            <path d="M51 42h8" />
+          </svg>
+        </div>
+
+        <span class="benefit-number">01</span>
+
+        <h3>Free IELTS Masterclass</h3>
+
+        <p>
+          Attend an online masterclass delivered by IDP specialists and
+          learn more about the IELTS test format, assessment criteria, and
+          preparation strategies.
+        </p>
+      </article>
+
+      <!-- Benefit 2 -->
+      <article class="idp-benefit-card blue-benefit">
+        <div class="idp-benefit-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="13" y="8" width="38" height="48" rx="5" />
+            <path d="M22 21h20M22 31h13" />
+            <path d="m22 43 5 5 12-14" />
+          </svg>
+        </div>
+
+        <span class="benefit-number">02</span>
+
+        <h3>Free Practice Test</h3>
+
+        <p>
+          Receive a complimentary official IELTS practice test when you
+          book your exam through the Tutorings and IDP partnership.
+        </p>
+      </article>
+
+      <!-- Benefit 3 -->
+      <article class="idp-benefit-card sky-benefit">
+        <div class="idp-benefit-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 16c9 0 17 3 24 10v29C25 48 17 45 8 45V16Z" />
+            <path d="M56 16c-9 0-17 3-24 10v29c7-7 15-10 24-10V16Z" />
+            <path d="M32 26v29" />
+            <path d="M16 26h9M39 26h9" />
+          </svg>
+        </div>
+
+        <span class="benefit-number">03</span>
+
+        <h3>Official Learning Resources</h3>
+
+        <p>
+          Access additional IELTS preparation materials and educational
+          resources provided directly by IDP after completing your
+          Tutorings IELTS preparation program.
+        </p>
+      </article>
+
+      <!-- Benefit 4 -->
+      <article class="idp-benefit-card green-benefit">
+        <div class="idp-benefit-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 6 52 14v14c0 14-8 23-20 30C20 51 12 42 12 28V14L32 6Z" />
+            <path d="m22 31 7 7 14-16" />
+          </svg>
+        </div>
+
+        <span class="benefit-number">04</span>
+
+        <h3>Exclusive Student Support</h3>
+
+        <p>
+          Benefit from trusted guidance, useful preparation resources,
+          and special support available exclusively to Tutorings students.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!-- Student Testimonials -->
+<section class="testimonials-section" id="testimonials">
+  <div class="testimonials-container">
+
+    <div class="testimonials-heading">
+      <span class="testimonials-label">STUDENT STORIES</span>
+
+      <h2>
+        What Our Students
+        <span>Say About Us</span>
+      </h2>
+
+      <p>
+        Real experiences from students who improved their English,
+        achieved their IELTS goals, and gained confidence with Tutorings.
+      </p>
+    </div>
+
+    <div class="testimonials-stage">
+
+      <!-- Review 1 -->
+      <article class="testimonial-card ">
+        <div class="testimonial-top">
+          <div
+            class="testimonial-stars"
+            aria-label="Five out of five stars"
+          >
+            ★★★★★
+          </div>
+
+          <span class="quote-icon">“</span>
+        </div>
+
+        <p class="testimonial-review">
+          I joined the IELTS program because I wanted to take the exam for
+          a scholarship. It was a one-month program and was challenging,
+          but it really paid off. I achieved a score of 7 out of 9, which
+          was higher than the minimum requirement for my application.
+          I will definitely join their General English program too.
+        </p>
+
+        <div class="testimonial-author">
+          <div class="student-avatar avatar-purple">
+            YQ
+          </div>
+
+          <div>
+            <h3>Yaser Al Qahtani</h3>
+            <span>IELTS Preparation Student</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Review 2 -->
+      <article class="testimonial-card ">
+      
+
+        <div class="testimonial-top">
+          <div
+            class="testimonial-stars"
+            aria-label="Five out of five stars"
+          >
+            ★★★★★
+          </div>
+
+          <span class="quote-icon">“</span>
+        </div>
+
+        <p class="testimonial-review">
+          I have completed three months in the General English program
+          with teacher Louay. In the first month, I did not know how to
+          arrange sentences or speak quickly. I noticed a clear
+          improvement when communicating with my international colleagues
+          in English. God willing, my next goal is to take the IELTS exam.
+        </p>
+
+        <div class="testimonial-author">
+          <div class="student-avatar avatar-blue">
+            MT
+          </div>
+
+          <div>
+            <h3>Mohammad Al-Turki</h3>
+            <span>General English Student</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Review 3 -->
+      <article class="testimonial-card ">
+        <div class="testimonial-top">
+          <div
+            class="testimonial-stars"
+            aria-label="Five out of five stars"
+          >
+            ★★★★★
+          </div>
+
+          <span class="quote-icon">“</span>
+        </div>
+
+        <p class="testimonial-review">
+          I am a Business Administration student, and I learned a lot
+          with Tutorings. I studied for six months and progressed from
+          level one to level three. I also noticed a major improvement
+          when speaking with my colleagues, which had always been one of
+          my biggest challenges.
+        </p>
+
+        <div class="testimonial-author">
+          <div class="student-avatar avatar-sky">
+            RG
+          </div>
+
+          <div>
+            <h3>Renad Al Ghamdi</h3>
+            <span>General English Student</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="testimonials-controls">
+      <button
+        class="testimonial-control previous-review"
+        type="button"
+        aria-label="Show previous review"
+      >
+        ←
+      </button>
+
+      <div class="testimonial-dots">
+        <button
+          class="testimonial-dot active"
+          type="button"
+          aria-label="Show first review"
+        ></button>
+
+        <button
+          class="testimonial-dot"
+          type="button"
+          aria-label="Show second review"
+        ></button>
+
+        <button
+          class="testimonial-dot"
+          type="button"
+          aria-label="Show third review"
+        ></button>
+      </div>
+
+      <button
+        class="testimonial-control next-review"
+        type="button"
+        aria-label="Show next review"
+      >
+        →
+      </button>
+    </div>
+
+    <a href="#" class="testimonials-button">
+      Start Your Success Story
+      <span>→</span>
+    </a>
+
+  </div>
+</section>
+<section class="logo-strip-section" id="collaborations">
+  <div class="logo-strip-heading">
+    <span>In collaboration with</span>
+  </div>
+
+  <div class="logo-strip">
+    <div class="logo-strip-track">
+
+      <!-- First set -->
+      <span class="partner-logo-wrapper">
+        <img class="partner-logo partner-logo--misk" src="images/misk-logo.png" alt="Misk Foundation" />
+      </span>
+      <span class="partner-logo-wrapper">
+        <img class="partner-logo partner-logo--monshaat" src="images/monshaat-logo.png" alt="Monsha’at" />
+      </span>
+      <span class="partner-logo-wrapper">
+        <img class="partner-logo partner-logo--oxford" src="images/png-clipart-university-college-oxford-collegiate-university-scholarship-oxford-university-logo-thumbnail-removebg-preview.png" alt="Oxford University Press" />
+      </span>
+      <span class="partner-logo-wrapper">
+        <img class="partner-logo partner-logo--cambridge" src="images/cambridge-logo.png" alt="Cambridge University Press" />
+      </span>
+      <span class="partner-logo-wrapper">
+        <img class="partner-logo partner-logo--ielts" src="images/idp-ielts-logo.png" alt="IDP IELTS" />
+      </span>
+
+      <!-- Duplicate set for seamless looping -->
+      <span class="partner-logo-wrapper" aria-hidden="true">
+        <img class="partner-logo partner-logo--misk" src="images/misk-logo.png" alt="" />
+      </span>
+      <span class="partner-logo-wrapper" aria-hidden="true">
+        <img class="partner-logo partner-logo--monshaat" src="images/monshaat-logo.png" alt="" />
+      </span>
+      <span class="partner-logo-wrapper" aria-hidden="true">
+        <img class="partner-logo partner-logo--oxford" src="images/png-clipart-university-college-oxford-collegiate-university-scholarship-oxford-university-logo-thumbnail-removebg-preview.png" alt="" />
+      </span>
+      <span class="partner-logo-wrapper" aria-hidden="true">
+        <img class="partner-logo partner-logo--cambridge" src="images/cambridge-logo.png" alt="" />
+      </span>
+      <span class="partner-logo-wrapper" aria-hidden="true">
+        <img class="partner-logo partner-logo--ielts" src="images/idp-ielts-logo.png" alt="" />
+      </span>
+
+    </div>
+  </div>
+</section>
+<section class="faq-section" id="faq">
+  <div class="faq-glow faq-glow-one"></div>
+  <div class="faq-glow faq-glow-two"></div>
+
+  <div class="faq-container">
+
+    <div class="faq-intro">
+      <span class="faq-label">Got a question?</span>
+
+      <h2>
+        Most answers are
+        <span>right here.</span>
+      </h2>
+
+      <p>
+        Find quick answers about tutors, lessons, certificates,
+        and your learning journey.
+      </p>
+
+    
+<a
+  href="https://wa.me/966500000000"
+  class="help-card"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <div class="help-icon">?</div>
+
+  <div class="help-text">
+    <strong>Still need help?</strong>
+
+    <span class="help-link">
+      Chat on WhatsApp
+      <span class="help-arrow">→</span>
+    </span>
+  </div>
+</a>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item active">
+        <button class="faq-question">
+          <span>Do you have male and female tutors?</span>
+          <span class="faq-icon">−</span>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. We have professional male and female tutors who
+            speak English and Arabic fluently.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Will I keep the same tutor?</span>
+          <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. You will have one dedicated tutor throughout your
+            learning level for a consistent experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I pause my program if I get busy?</span>
+          <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. You can pause your program for up to 14 days with
+            advance notice.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Are live lessons recorded?</span>
+          <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. A recording is added to the learning platform after
+            each lesson so you can review it anytime.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Will I receive a certificate?</span>
+          <span class="faq-icon">+</span>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. You will receive a certificate after completing your
+            level and successfully passing the promotion assessment.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="site-footer" id="contact">
+  <div class="footer-glow footer-glow-one"></div>
+  <div class="footer-glow footer-glow-two"></div>
+
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-column footer-about">
+      <h3>About Us</h3>
+
+      <p>
+        We are committed to providing a personalized learning
+        experience. Every student receives individual attention
+        to help them achieve their educational goals.
+      </p>
+
+    </div>
+
+    <!-- Pages -->
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+
+      <ul class="footer-links">
+        <li>
+          <a href="#home">
+            <span>›</span>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="#how-it-works">
+            <span>›</span>
+            How It Works
+          </a>
+        </li>
+
+        <li>
+          <a href="#ielts">
+            <span>›</span>
+            IELTS Preparation
+          </a>
+        </li>
+
+        <li>
+          <a href="#general-english">
+            <span>›</span>
+            General English
+          </a>
+        </li>
+
+        <li>
+          <a href="#faq">
+            <span>›</span>
+            FAQs
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-column footer-newsletter">
+      <h3>Stay Updated</h3>
+
+      <p>
+        Enter your email address and subscribe to our newsletter.
+      </p>
+
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Your email address"
+          aria-label="Email address"
+          required
+        />
+
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="footer-contact">
+        <a href="tel:+966560691059">
+          <i class="fa-solid fa-phone"></i>
+          +966 56 069 1059
+        </a>
+
+        <a href="mailto:info@tutorings.sa">
+          <i class="fa-regular fa-envelope"></i>
+          info@tutorings.sa
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-vision-contact">
+    <div class="footer-vision-contact-slot">
+      <div class="footer-vision-mark" aria-label="Saudi Vision 2030">
+        <img src="images/R.png" alt="Saudi Vision 2030 logo" />
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      © 2026 Tutorings. All rights reserved.
+    </p>
+
+    <p>
+      For partnerships,
+      <a href="mailto:info@tutorings.sa">contact us by email</a>
+    </p>
+  </div>
+
+</footer>
+
+    </main>
+  </div>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const mobileNavigation = document.querySelector(".mobile-navigation");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = mobileNavigation.classList.toggle("open");
+
+      menuButton.classList.toggle("open", isOpen);
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+    });
+
+    const navigationLinks = Array.from(
+      document.querySelectorAll(
+        '.desktop-navigation a[href^="#"], .sign-in-link[href^="#"], .mobile-navigation a[href^="#"]'
+      )
+    );
+    const navigationSections = Array.from(
+      new Set(
+        navigationLinks
+          .map((link) => document.querySelector(link.hash))
+          .filter(Boolean)
+      )
+    ).sort(
+      (firstSection, secondSection) =>
+        firstSection.offsetTop - secondSection.offsetTop
+    );
+    const reduceNavigationMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+    let navigationAnimationFrame;
+    let activeNavigationFrame;
+    let isProgrammaticNavigation = false;
+
+    function setActiveNavigation(targetHash) {
+      navigationLinks.forEach((link) => {
+        const isActive = link.hash === targetHash;
+
+        link.classList.toggle("active", isActive);
+
+        if (isActive) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    function updateActiveNavigation() {
+      const viewportMarker = window.scrollY + window.innerHeight * 0.35;
+      let activeSection = navigationSections[0];
+
+      navigationSections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+
+        if (sectionTop <= viewportMarker) {
+          activeSection = section;
+        }
+      });
+
+      if (activeSection) {
+        setActiveNavigation(`#${activeSection.id}`);
+      }
+    }
+
+    function scrollToNavigationSection(section, duration = 750) {
+      cancelAnimationFrame(navigationAnimationFrame);
+      isProgrammaticNavigation = true;
+
+      const startPosition = window.scrollY;
+      const targetPosition =
+        section.getBoundingClientRect().top + window.scrollY;
+      const distance = targetPosition - startPosition;
+
+      if (reduceNavigationMotion.matches || Math.abs(distance) < 2) {
+        window.scrollTo(0, targetPosition);
+        isProgrammaticNavigation = false;
+        updateActiveNavigation();
+        return;
+      }
+
+      document.documentElement.style.scrollBehavior = "auto";
+      let startTime;
+
+      const animateScroll = (timestamp) => {
+        startTime ??= timestamp;
+
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        const easedProgress =
+          progress < 0.5
+            ? 4 * progress * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+        window.scrollTo(0, startPosition + distance * easedProgress);
+
+        if (progress < 1) {
+          navigationAnimationFrame = requestAnimationFrame(animateScroll);
+        } else {
+          document.documentElement.style.removeProperty("scroll-behavior");
+          isProgrammaticNavigation = false;
+          updateActiveNavigation();
+        }
+      };
+
+      navigationAnimationFrame = requestAnimationFrame(animateScroll);
+    }
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const targetSection = document.querySelector(link.hash);
+
+        if (!targetSection) {
+          return;
+        }
+
+        event.preventDefault();
+        history.pushState(null, "", link.hash);
+        setActiveNavigation(link.hash);
+
+        if (mobileNavigation.contains(link)) {
+          mobileNavigation.classList.remove("open");
+          menuButton.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation menu");
+        }
+
+        scrollToNavigationSection(targetSection);
+      });
+    });
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (isProgrammaticNavigation) {
+          return;
+        }
+
+        cancelAnimationFrame(activeNavigationFrame);
+        activeNavigationFrame = requestAnimationFrame(updateActiveNavigation);
+      },
+      { passive: true }
+    );
+
+    updateActiveNavigation();
+
+    const journeySection = document.querySelector(".about-tutorings");
+    const journeyTimeline = document.querySelector(".journey-timeline-shell");
+    const journeyStages = Array.from(
+      document.querySelectorAll(".journey-stage")
+    );
+    let journeyStageObserver;
+    let journeySectionObserver;
+    let journeyProgressFrame;
+    let isJourneyNearViewport = false;
+
+    function setActiveJourneyStage(activeIndex) {
+      journeyStages.forEach((stage, index) => {
+        const isActive = index === activeIndex;
+        const isComplete = index < activeIndex;
+        const description = stage.querySelector(".stage-description");
+
+        stage.classList.toggle("is-active", isActive);
+        stage.classList.toggle("is-complete", isComplete);
+
+        if (isActive) {
+          stage.setAttribute("aria-current", "step");
+        } else {
+          stage.removeAttribute("aria-current");
+        }
+
+        description?.setAttribute("aria-hidden", String(!isActive));
+      });
+    }
+
+    function updateJourneyProgress() {
+      if (!journeyTimeline || journeyStages.length < 2) {
+        return;
+      }
+
+      const firstStage = journeyStages[0].getBoundingClientRect();
+      const lastStage = journeyStages.at(-1).getBoundingClientRect();
+      const firstStageCenter = window.scrollY + firstStage.top + firstStage.height / 2;
+      const lastStageCenter = window.scrollY + lastStage.top + lastStage.height / 2;
+      const viewportCenter = window.scrollY + window.innerHeight / 2;
+      const journeyLength = lastStageCenter - firstStageCenter;
+      const progress = Math.min(
+        Math.max((viewportCenter - firstStageCenter) / journeyLength, 0),
+        1
+      );
+
+      journeyTimeline.style.setProperty(
+        "--journey-progress",
+        `${progress * 100}%`
+      );
+    }
+
+    function scheduleJourneyProgress() {
+      if (!isJourneyNearViewport) {
+        return;
+      }
+
+      cancelAnimationFrame(journeyProgressFrame);
+      journeyProgressFrame = requestAnimationFrame(updateJourneyProgress);
+    }
+
+    if (journeySection && journeyStages.length) {
+      if ("IntersectionObserver" in window) {
+        journeyStageObserver = new IntersectionObserver(
+          (entries) => {
+            const centeredStages = entries
+              .filter((entry) => entry.isIntersecting)
+              .sort((firstEntry, secondEntry) => {
+                const viewportCenter = window.innerHeight / 2;
+                const firstDistance = Math.abs(
+                  firstEntry.boundingClientRect.top +
+                    firstEntry.boundingClientRect.height / 2 -
+                    viewportCenter
+                );
+                const secondDistance = Math.abs(
+                  secondEntry.boundingClientRect.top +
+                    secondEntry.boundingClientRect.height / 2 -
+                    viewportCenter
+                );
+
+                return firstDistance - secondDistance;
+              });
+
+            if (centeredStages[0]) {
+              setActiveJourneyStage(
+                journeyStages.indexOf(centeredStages[0].target)
+              );
+            }
+          },
+          {
+            rootMargin: "-38% 0px -38% 0px",
+            threshold: 0
+          }
+        );
+
+        journeyStages.forEach((stage) => journeyStageObserver.observe(stage));
+
+        journeySectionObserver = new IntersectionObserver(
+          ([entry]) => {
+            isJourneyNearViewport = entry.isIntersecting;
+
+            if (isJourneyNearViewport) {
+              scheduleJourneyProgress();
+            }
+          },
+          { rootMargin: "30% 0px 30% 0px" }
+        );
+
+        journeySectionObserver.observe(journeySection);
+      } else {
+        isJourneyNearViewport = true;
+        setActiveJourneyStage(0);
+        updateJourneyProgress();
+      }
+
+      window.addEventListener("scroll", scheduleJourneyProgress, {
+        passive: true
+      });
+      window.addEventListener("resize", scheduleJourneyProgress);
+    }
+
+    const counterAnimationFrames = [];
+
+    function animateStatisticCounters() {
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      document.querySelectorAll(".statistics strong").forEach((counter) => {
+        const originalText = counter.textContent.trim();
+        const numberMatch = originalText.match(/-?\d[\d,]*(?:\.\d+)?/);
+
+        if (!numberMatch) {
+          return;
+        }
+
+        const originalNumber = numberMatch[0];
+        const finalValue = Number(originalNumber.replace(/,/g, ""));
+
+        if (!Number.isFinite(finalValue) || prefersReducedMotion) {
+          return;
+        }
+
+        const prefix = originalText.slice(0, numberMatch.index);
+        const suffix = originalText.slice(
+          numberMatch.index + originalNumber.length
+        );
+        const usesGrouping = originalNumber.includes(",");
+        const decimalPlaces = originalNumber.includes(".")
+          ? originalNumber.split(".")[1].length
+          : 0;
+        const duration = 1800;
+        let startTime;
+        let animationFrame;
+
+        const formatValue = (value) => {
+          const fixedValue = decimalPlaces
+            ? value.toFixed(decimalPlaces)
+            : String(Math.round(value));
+
+          if (!usesGrouping) {
+            return fixedValue;
+          }
+
+          const [integerPart, decimalPart] = fixedValue.split(".");
+          const groupedInteger = Number(integerPart).toLocaleString("en-US");
+
+          return decimalPart
+            ? `${groupedInteger}.${decimalPart}`
+            : groupedInteger;
+        };
+
+        counter.textContent = `${prefix}${formatValue(0)}${suffix}`;
+
+        const updateCounter = (timestamp) => {
+          startTime ??= timestamp;
+
+          const progress = Math.min((timestamp - startTime) / duration, 1);
+          const easedProgress = 1 - Math.pow(1 - progress, 3);
+          const currentValue = finalValue * easedProgress;
+
+          counter.textContent = `${prefix}${formatValue(currentValue)}${suffix}`;
+
+          if (progress < 1) {
+            animationFrame = requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = originalText;
+          }
+        };
+
+        animationFrame = requestAnimationFrame(updateCounter);
+        counterAnimationFrames.push(() => cancelAnimationFrame(animationFrame));
+      });
+    }
+
+    animateStatisticCounters();
+
+    window.addEventListener(
+      "pagehide",
+      () => {
+        cancelAnimationFrame(navigationAnimationFrame);
+        cancelAnimationFrame(activeNavigationFrame);
+        cancelAnimationFrame(journeyProgressFrame);
+        isProgrammaticNavigation = false;
+        document.documentElement.style.removeProperty("scroll-behavior");
+        journeyStageObserver?.disconnect();
+        journeySectionObserver?.disconnect();
+        counterAnimationFrames.forEach((cancelAnimation) => cancelAnimation());
+      },
+      { once: true }
+    );
+
+    const reviewCards = Array.from(
+  document.querySelectorAll(".testimonial-card")
+);
+
+const reviewDots = document.querySelectorAll(".testimonial-dot");
+const previousReviewButton = document.querySelector(".previous-review");
+const nextReviewButton = document.querySelector(".next-review");
+const testimonialsStage = document.querySelector(".testimonials-stage");
+
+let activeReview = 1;
+
+function updateReviewCarousel() {
+  if (!testimonialsStage || reviewCards.length === 0) {
+    return;
+  }
+
+  reviewCards.forEach((card) => {
+    card.classList.remove(
+      "testimonial-left",
+      "testimonial-center",
+      "testimonial-right",
+      "mobile-active"
+    );
+  });
+
+  const previousIndex =
+    (activeReview - 1 + reviewCards.length) % reviewCards.length;
+
+  const nextIndex =
+    (activeReview + 1) % reviewCards.length;
+
+  if (window.innerWidth <= 650) {
+    reviewCards[activeReview].classList.add("mobile-active");
+  } else {
+    reviewCards[previousIndex].classList.add("testimonial-left");
+    reviewCards[activeReview].classList.add("testimonial-center");
+    reviewCards[nextIndex].classList.add("testimonial-right");
+
+    testimonialsStage.innerHTML = "";
+
+    testimonialsStage.append(
+      reviewCards[previousIndex],
+      reviewCards[activeReview],
+      reviewCards[nextIndex]
+    );
+  }
+
+  reviewDots.forEach((dot, index) => {
+    dot.classList.toggle("active", index === activeReview);
+  });
+}
+
+nextReviewButton?.addEventListener("click", () => {
+  activeReview = (activeReview + 1) % reviewCards.length;
+  updateReviewCarousel();
+});
+
+previousReviewButton?.addEventListener("click", () => {
+  activeReview =
+    (activeReview - 1 + reviewCards.length) % reviewCards.length;
+
+  updateReviewCarousel();
+});
+
+reviewDots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    activeReview = index;
+    updateReviewCarousel();
+  });
+});
+
+window.addEventListener("resize", updateReviewCarousel);
+
+updateReviewCarousel();
+  </script>
+  <script>
+    (() => {
+      const card = document.querySelector("[data-scratch-card]");
+
+      if (!card) {
+        return;
+      }
+
+      const canvas = card.querySelector(".scratch-canvas");
+      const surface = card.querySelector(".scratch-surface");
+      const revealButton = card.querySelector(".reveal-guarantee");
+      const resetButton = document.querySelector(".scratch-again");
+      const status = document.querySelector(".scratch-status");
+      const context = canvas.getContext("2d");
+      const revealThreshold = 0.47;
+      const coverageCellSize = 12;
+      const brushRadius = 30;
+      const scratchedCells = new Set();
+      let coverageColumns = 0;
+      let coverageRows = 0;
+      let isDrawing = false;
+      let isRevealed = false;
+      let previousPoint = null;
+      let resizeFrame = 0;
+
+      function paintGoldSurface() {
+        const { width, height } = canvas.getBoundingClientRect();
+        const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+
+        surface.classList.remove("is-ready");
+        canvas.width = Math.round(width * pixelRatio);
+        canvas.height = Math.round(height * pixelRatio);
+        context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+        context.globalCompositeOperation = "source-over";
+
+        const gold = context.createLinearGradient(0, 0, width, height);
+        gold.addColorStop(0, "#8e6814");
+        gold.addColorStop(0.18, "#e4bd48");
+        gold.addColorStop(0.36, "#fff1a4");
+        gold.addColorStop(0.53, "#b88618");
+        gold.addColorStop(0.72, "#f6d76c");
+        gold.addColorStop(1, "#9e7416");
+        context.fillStyle = gold;
+        context.fillRect(0, 0, width, height);
+
+        context.strokeStyle = "rgba(255, 251, 213, 0.16)";
+        context.lineWidth = 1;
+        for (let x = -height; x < width; x += 18) {
+          context.beginPath();
+          context.moveTo(x, 0);
+          context.lineTo(x + height, height);
+          context.stroke();
+        }
+
+        coverageColumns = Math.ceil(width / coverageCellSize);
+        coverageRows = Math.ceil(height / coverageCellSize);
+        scratchedCells.clear();
+        surface.classList.add("is-ready");
+      }
+
+      function pointFromEvent(event) {
+        const bounds = canvas.getBoundingClientRect();
+
+        return {
+          x: event.clientX - bounds.left,
+          y: event.clientY - bounds.top
+        };
+      }
+
+      function recordScratchedArea(point) {
+        const startColumn = Math.max(
+          0,
+          Math.floor((point.x - brushRadius) / coverageCellSize)
+        );
+        const endColumn = Math.min(
+          coverageColumns - 1,
+          Math.floor((point.x + brushRadius) / coverageCellSize)
+        );
+        const startRow = Math.max(
+          0,
+          Math.floor((point.y - brushRadius) / coverageCellSize)
+        );
+        const endRow = Math.min(
+          coverageRows - 1,
+          Math.floor((point.y + brushRadius) / coverageCellSize)
+        );
+
+        for (let row = startRow; row <= endRow; row += 1) {
+          for (let column = startColumn; column <= endColumn; column += 1) {
+            const cellX = (column + 0.5) * coverageCellSize;
+            const cellY = (row + 0.5) * coverageCellSize;
+            const distance = Math.hypot(cellX - point.x, cellY - point.y);
+
+            if (distance <= brushRadius) {
+              scratchedCells.add(row * coverageColumns + column);
+            }
+          }
+        }
+      }
+
+      function revealGuarantee() {
+        if (isRevealed) {
+          return;
+        }
+
+        isRevealed = true;
+        isDrawing = false;
+        previousPoint = null;
+        card.classList.remove("is-scratching");
+        card.classList.add("is-revealed");
+        surface.setAttribute("aria-hidden", "true");
+        canvas.tabIndex = -1;
+        revealButton.disabled = true;
+        resetButton.hidden = false;
+        status.textContent = "Golden Guarantee revealed.";
+      }
+
+      function checkRevealThreshold() {
+        const totalCells = coverageColumns * coverageRows;
+
+        if (totalCells && scratchedCells.size / totalCells >= revealThreshold) {
+          revealGuarantee();
+        }
+      }
+
+      function scratchTo(point) {
+        context.save();
+        context.globalCompositeOperation = "destination-out";
+        context.lineCap = "round";
+        context.lineJoin = "round";
+        context.lineWidth = brushRadius * 2;
+        context.beginPath();
+
+        if (previousPoint) {
+          context.moveTo(previousPoint.x, previousPoint.y);
+          context.lineTo(point.x, point.y);
+
+          const distance = Math.hypot(
+            point.x - previousPoint.x,
+            point.y - previousPoint.y
+          );
+          const steps = Math.max(1, Math.ceil(distance / coverageCellSize));
+
+          for (let step = 0; step <= steps; step += 1) {
+            const progress = step / steps;
+            recordScratchedArea({
+              x: previousPoint.x + (point.x - previousPoint.x) * progress,
+              y: previousPoint.y + (point.y - previousPoint.y) * progress
+            });
+          }
+        } else {
+          context.moveTo(point.x, point.y);
+          context.lineTo(point.x + 0.01, point.y);
+          recordScratchedArea(point);
+        }
+
+        context.stroke();
+        context.restore();
+        previousPoint = point;
+        checkRevealThreshold();
+      }
+
+      function startScratching(event) {
+        if (isRevealed || event.button > 0) {
+          return;
+        }
+
+        event.preventDefault();
+        isDrawing = true;
+        card.classList.add("is-scratching");
+        canvas.setPointerCapture?.(event.pointerId);
+        previousPoint = null;
+        scratchTo(pointFromEvent(event));
+      }
+
+      function continueScratching(event) {
+        if (!isDrawing || isRevealed) {
+          return;
+        }
+
+        event.preventDefault();
+        const coalescedEvents = event.getCoalescedEvents?.() || [];
+        const pointerEvents = coalescedEvents.length ? coalescedEvents : [event];
+        pointerEvents.forEach((pointerEvent) => {
+          scratchTo(pointFromEvent(pointerEvent));
+        });
+      }
+
+      function stopScratching(event) {
+        if (!isDrawing) {
+          return;
+        }
+
+        isDrawing = false;
+        previousPoint = null;
+        card.classList.remove("is-scratching");
+
+        if (canvas.hasPointerCapture?.(event.pointerId)) {
+          canvas.releasePointerCapture(event.pointerId);
+        }
+      }
+
+      function resetScratchCard() {
+        isRevealed = false;
+        isDrawing = false;
+        previousPoint = null;
+        card.classList.remove("is-revealed", "is-scratching");
+        surface.removeAttribute("aria-hidden");
+        canvas.tabIndex = 0;
+        revealButton.disabled = false;
+        resetButton.hidden = true;
+        status.textContent = "Golden scratch surface restored.";
+        paintGoldSurface();
+        canvas.focus({ preventScroll: true });
+      }
+
+      canvas.addEventListener("pointerdown", startScratching);
+      canvas.addEventListener("pointermove", continueScratching);
+      canvas.addEventListener("pointerup", stopScratching);
+      canvas.addEventListener("pointercancel", stopScratching);
+      canvas.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          revealGuarantee();
+        }
+      });
+      revealButton.addEventListener("click", revealGuarantee);
+      resetButton.addEventListener("click", resetScratchCard);
+      window.addEventListener("resize", () => {
+        cancelAnimationFrame(resizeFrame);
+        resizeFrame = requestAnimationFrame(() => {
+          if (!isRevealed) {
+            paintGoldSurface();
+          }
+        });
+      });
+      window.addEventListener(
+        "pagehide",
+        () => cancelAnimationFrame(resizeFrame),
+        { once: true }
+      );
+
+      paintGoldSurface();
+    })();
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const faqItems = document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(function (item) {
+      const button = item.querySelector(".faq-question");
+      const icon = item.querySelector(".faq-icon");
+
+      button.addEventListener("click", function () {
+        const isActive = item.classList.contains("active");
+
+        faqItems.forEach(function (faqItem) {
+          faqItem.classList.remove("active");
+
+          const faqIcon = faqItem.querySelector(".faq-icon");
+
+          if (faqIcon) {
+            faqIcon.textContent = "+";
+          }
+        });
+
+        if (!isActive) {
+          item.classList.add("active");
+          icon.textContent = "−";
+        }
+      });
+    });
+  });
+</script>
+  
+</body>
+</html>
